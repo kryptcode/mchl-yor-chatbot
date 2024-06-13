@@ -1,4 +1,5 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,9 +26,9 @@ export default function Home() {
               </button>
             </SignedOut>
             <SignedIn>
-              <button className="p-1.5 px-5 rounded-md font-medium bg-[#69f2fa] text-[#163748] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear">
+              <Link href={"/chat"} className="p-1.5 px-5 rounded-md font-medium bg-[#69f2fa] text-[#163748] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear">
                 Continue chatting
-              </button>
+              </Link>
             </SignedIn>
           </div>
         </div>
