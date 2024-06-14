@@ -1,9 +1,10 @@
 "use client"
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const ChatPage = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
+  
 
   const sendMessage = async () => {
     const res = await fetch("http://localhost:8000/run-notebook", {
