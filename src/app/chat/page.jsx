@@ -6,7 +6,7 @@ const ChatPage = () => {
   const [input, setInput] = useState("");
 
   const sendMessage = async () => {
-    const res = await fetch("http://localhost:8000/api/chat", {
+    const res = await fetch("http://localhost:8000/run-notebook", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ const ChatPage = () => {
 
       <div className="flex-grow w-[90%] mx-auto flex flex-col h-[85vh]">
 
-      <div className="flex-grow bg-black overflow-y-scroll">
+      <div className="flex-grow bg-gray-100 overflow-y-scroll">
         {messages.map((msg, index) => (
           <div className="space-y-4" key={index}>
             <p>
