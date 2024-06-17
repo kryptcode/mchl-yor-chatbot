@@ -6,13 +6,13 @@ import { useState } from "react";
 export default function Home() {
   const [isYoruba, setIsYoruba] = useState(true);
   return (
-    <main className="min-h-[200vh] w-full text-neutral-400 bg-[#000007] relative ">
-      <div className="h-[10vh] bg-[#000007] flex items-center sticky top-0 left-0 justify-center border-[#7870b5] border-b ">
+    <main className="min-h-[200vh] w-full text-neutral-400 bg-[#0d1221] relative ">
+      <div className="h-[10vh] bg-[#0d1221] flex items-center sticky top-0 left-0 justify-center border-[#7870b5] border-b ">
         <div className="w-[90%] flex justify-between items-center mx-auto ">
           <div>
             <Link
               href="/"
-              className="text-2xl text-green-900 font-medium font-danfo"
+              className="text-2xl text-[#2fe06f] font-medium font-danfo"
             >
               Ọ̀rẹ́ Ọkàn
             </Link>
@@ -20,7 +20,7 @@ export default function Home() {
 
           <div className="flex space-x-3 items-center ">
             <div
-              className="text-[#3c6831]"
+              className="text-[#2fe06f]"
               onClick={() => setIsYoruba(!isYoruba)}
             >
               Translate to{" "}
@@ -29,14 +29,14 @@ export default function Home() {
               </span>
             </div>
             <SignedOut>
-              <button className="p-1.5 px-5 rounded-md font-medium bg-[#3c6831] text-[#111] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear">
+              <button className="p-1.5 px-5 rounded-md font-medium bg-[#2fe06f] text-[#0d1221] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear">
                 <SignInButton />
               </button>
             </SignedOut>
             <SignedIn>
               <Link
                 href={"/chat"}
-                className="p-1.5 px-5 rounded-md font-medium bg-[#3c6831] text-[#111] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear"
+                className="p-1.5 px-5 rounded-md font-medium bg-[#2fe06f] text-[#0d1221] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear"
               >
                 Continue chatting
               </Link>
@@ -46,29 +46,29 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:flex-row items-start space-y-5 lg:space-y-0 lg:space-x-7 py-16 w-[90%] mx-auto">
         <div className="flex-[1.2] ">
-          <h2 className="font-danfo text-green-900 text-6xl lg:text-9xl mb-6 ">
+          <h2 className="font-danfo text-[#2fe06f] text-6xl lg:text-9xl mb-6 ">
             Ọ̀rẹ́ Ọkàn
           </h2>
           <p className="text-neutral-300 text-2xl font-medium mb-1">
             {isYoruba
               ? "Ẹ káàbọ̀ sí Ọ̀rẹ́ Ọkàn - Ayékan àbójútó àyíká rẹ ní èdè Yorùbá!"
-              : "Welcome to Friend of the Heart - Your mental health companion in Yoruba!"}
+              : "Welcome to Ọ̀rẹ́ Ọkàn - Your mental health companion in Yoruba!"}
           </p>
           <p className="text-lg mb-6">
             {isYoruba
               ? "Ọ̀rẹ́ Ọkàn jẹ́ ẹlẹ́rọ̀nà-ìbànújẹ́ àti àbójútó àyíká tó n jẹ́ kí àwọn ènìyàn lò éde Yorùbá láti ṣe ìbáṣepọ̀ àti ké gbọ́ ìtẹ́wọ́gbà tí wọ́n fẹ́."
-              : "Friend of the Heart is a digital mental health companion that allows people to converse in Yoruba for the support and acceptance they need."}
+              : "Ọ̀rẹ́ Ọkàn is a digital mental health companion that allows people to converse in Yoruba for the support and acceptance they need."}
           </p>
           <div>
             <SignedOut>
-              <button className="p-1.5 px-10 rounded-md font-medium bg-[#3c6831] text-[#111] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear">
+              <button className="p-1.5 px-10 rounded-md font-medium bg-[#2fe06f] text-[#0d1221] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear">
                 <SignInButton />
               </button>
             </SignedOut>
             <SignedIn>
               <Link
                 href={"/chat"}
-                className="p-1.5 px-10 rounded-md font-medium bg-[#3c6831] text-[#111] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear"
+                className="p-1.5 px-10 rounded-md font-medium bg-[#2fe06f] text-[#0d1221] text-lg hover:opacity-80 transition-opacity duration-300 ease-linear"
               >
                 Continue chatting
               </Link>
@@ -81,12 +81,12 @@ export default function Home() {
 
       <div className="w-[90%] lg:w-2/3 text-xl text-center mx-auto py-24 ">
         <h6 className="text-4xl text-center text-neutral-200 font-bold mb-3">
-          {isYoruba ? "Kí ló jẹ́ Ọ̀rẹ́ Ọkàn?" : "What is Friend of the Heart?"}
+          {isYoruba ? "Kí ló jẹ́ Ọ̀rẹ́ Ọkàn?" : "What is Ọ̀rẹ́ Ọkàn?"}
         </h6>
         <p>
           {isYoruba
             ? "Ọ̀rẹ́ Ọkàn jẹ́ chatbot tí a ṣe ètò fún àbójútó ọ̀ràn ọkàn àti èdè Yorùbá. A ti ṣe é láti máa sọ̀rọ̀ pẹ̀lú rẹ nípa ohun tí o n ṣàdédé. O lè bá a sọ̀rọ̀ nígbàkùgbà, nígbà gbogbo ní èdè tí o dá lójú."
-            : "Friend of the Heart is a chatbot designed to address mental health issues and provide support in Yoruba. It is created to engage with you about your concerns at any time, in the language you are comfortable with."}
+            : "Ọ̀rẹ́ Ọkàn is a chatbot designed to address mental health issues and provide support in Yoruba. It is created to engage with you about your concerns at any time, in the language you are comfortable with."}
         </p>
         {isYoruba ? "" : ""}
 
@@ -96,7 +96,7 @@ export default function Home() {
       <div className="flex flex-col w-[90%] lg:w-[70%] mx-auto lg:flex-row py-12 lg:space-x-7">
         <div className="flex-1 flex flex-col justify-evenly space-y-5">
           <div className="rounded-xl p-4 border">
-            <h6 className="text-[#3c6831] text-xl font-semibold mb-3">
+            <h6 className="text-[#2fe06f] text-xl font-semibold mb-3">
               {isYoruba ? "Àwọn Èyàn Wo Nìkan yóò Rànlọ́wọ́?" : "Who Can It Help?"}
             </h6>
             <ul className="space-y-1.5">
@@ -123,8 +123,8 @@ export default function Home() {
           </div>
 
           <div className="rounded-xl p-4 border">
-            <h6 className="text-[#3c6831] text-xl font-semibold mb-3">
-              {isYoruba ? "Àwọn Àǹfààní Ọ̀rẹ́ Ọkàn:" : "Benefits of Friend of the Heart:"}
+            <h6 className="text-[#2fe06f] text-xl font-semibold mb-3">
+              {isYoruba ? "Àwọn Àǹfààní Ọ̀rẹ́ Ọkàn:" : "Benefits of Ọ̀rẹ́ Ọkàn:"}
             </h6>
             <ul className="space-y-1.5">
               <li className="">
@@ -152,7 +152,7 @@ export default function Home() {
                 ) : (
                   <span>
                     <b className="text-neutral-300">Respect and Acceptance:</b>{" "}
-                    Friend of the Heart will make you feel loved and accepted.
+                    Ọ̀rẹ́ Ọkàn will make you feel loved and accepted.
                   </span>
                 )}
               </li>
@@ -176,8 +176,8 @@ export default function Home() {
           </div>
         </div>
         <div className="rounded-xl flex-1 p-4 border">
-          <h6 className="text-[#3c6831] text-xl font-semibold mb-3">
-            {isYoruba ? "Báwo ni Ọ̀rẹ́ Ọkàn ṣe n ṣiṣẹ́?" : "How Does Friend of the Heart Work?"}
+          <h6 className="text-[#2fe06f] text-xl font-semibold mb-3">
+            {isYoruba ? "Báwo ni Ọ̀rẹ́ Ọkàn ṣe n ṣiṣẹ́?" : "How Does Ọ̀rẹ́ Ọkàn Work?"}
           </h6>
 
           <ul className=" text-xl space-y-1.5">
@@ -206,10 +206,10 @@ export default function Home() {
               ) : (
                 <span>
                   <b className="text-neutral-300">
-                    Talk to Friend of the Heart:{" "}
+                    Talk to Ọ̀rẹ́ Ọkàn:{" "}
                   </b>{" "}
                   Share what is troubling you, what is causing you sadness or
-                  anxiety. Friend of the Heart will listen and provide advice to
+                  anxiety. Ọ̀rẹ́ Ọkàn will listen and provide advice to
                   help you.
                 </span>
               )}
@@ -224,7 +224,7 @@ export default function Home() {
               ) : (
                 <span>
                   <b className="text-neutral-300">Receive Genuine Support: </b>{" "}
-                  The advice given by Friend of the Heart will be accompanied by
+                  The advice given by Ọ̀rẹ́ Ọkàn will be accompanied by
                   practical tips for your growth and mental well-being.
                 </span>
               )}
@@ -240,7 +240,7 @@ export default function Home() {
         <p>
           {isYoruba
             ? "Ẹ yáwọlé sí ìgbé ayé aláàánú àti ìfẹ́, bá a Ọ̀rẹ́ Ọkàn sòwò lónìí."
-            : "Step into a life of compassion and love by talking to Friend of the Heart today."}
+            : "Step into a life of compassion and love by talking to Ọ̀rẹ́ Ọkàn today."}
         </p>
       </div>
       {/* <div className="flex flex-col-reverse lg:flex-row w-[90%] mx-auto lg:w-[70%] h-[80%]">
