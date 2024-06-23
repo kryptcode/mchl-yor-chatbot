@@ -14,7 +14,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "danfo": ["Danfo", "sans-serif"]
+        "danfo": ["Danfo", "sans-serif"],
+        "poppins": ["Poppins", "sans-serif"],
+        "montalt": ["Montserrat Alternates", "sans-serif"],
+        "monts": ["Montserrat", "sans-serif"],
       }
     },
   },
