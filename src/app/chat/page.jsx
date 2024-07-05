@@ -7,17 +7,30 @@ const ChatPage = () => {
   
 
   const sendMessage = async () => {
-    const res = await fetch("http://localhost:8000/run-notebook", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ message: input }),
+    const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: input }),
     });
-    const data = await res.json();
+    const data = await response.json();
     setMessages([...messages, { user: input, bot: data.response }]);
-    setInput("");
-  };
+    setInput('');
+};
+
+  // const sendMessage = async () => {
+  //   const res = await fetch("http://localhost:8000/run-notebook", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({ message: input }),
+  //   });
+  //   const data = await res.json();
+  //   setMessages([...messages, { user: input, bot: data.response }]);
+  //   setInput("");
+  // };
 
   return (
     <main className="h-screen flex flex-col w-full">
