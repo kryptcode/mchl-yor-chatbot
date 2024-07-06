@@ -86,7 +86,8 @@ export default function Home() {
             )}
         </div>
       </div>
-      <div className="lg:py-24"></div>
+
+      {/* TODO: Services */}
 
 
       
@@ -100,6 +101,16 @@ export default function Home() {
             : "Step into a life of compassion and love by talking to Ọ̀rẹ́ Ọkàn today."}
         </p>
       </div>
+
+      <footer className="bg-[#ff4f5a] py-16 border-t border-black/20 text-black ">
+        <div className="w-[90%] mx-auto ">
+          <h2 className="text-3xl font-montalt mb-4 font-bold">Ọ̀rẹ́ Ọkàn </h2>
+          <p>
+            &copy; Copyright 2024. Byte7
+          </p>
+          <p className="my-2">All rightt reserved.</p>
+        </div>
+      </footer>
       {/* <div className="flex flex-col-reverse lg:flex-row w-[90%] mx-auto lg:w-[70%] h-[80%]">
         <div className="flex-1">
           <h3 className="text-4xl lg:text-5xl font-semibold lg:leading-normal mb-5">
