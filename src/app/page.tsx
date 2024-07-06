@@ -14,6 +14,7 @@ export default function Home() {
               href="/"
               className="text-2xl text-black  font-montalt font-bold"
             >
+              
               Ọ̀rẹ́ Ọkàn
             </Link>
           </div>
@@ -44,7 +45,7 @@ export default function Home() {
         </div>
       </div>
       {/* Hero Section */}
-      <div className="bg-[url(https://images.pexels.com/photos/3172830/pexels-photo-3172830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] z-0 text-neutral-100 bg-cover bg-center lg:h-screen relative">
+      <div className="z-0 text-neutral-100 bg-cover bg-center lg:h-screen relative">
         <div className="py-16 lg:pt-32 w-[90%] z-[10]  mx-auto">
           <div className="text-center lg:w-2/3 mx-auto">
             <h2 className="font-montalt font-bold text-[#4ddb4d] text-6xl lg:text-9xl mb-6 ">
