@@ -33,7 +33,7 @@ const ChatPage = () => {
   // };
 
   return (
-    <main className="h-screen flex flex-col bg-[#1d1d1d] w-full">
+    <main className="h-screen flex flex-col bg-[#ff4f5a] w-full">
       <div className=" py-5 h-[15vh] ">
         <h5 className=" text-center text-lg font-medium">Ọ̀rẹ́ Ọkàn</h5>
         <div className="flex space-x-1.5 text-sm mt-2 items-center justify-center">
@@ -42,9 +42,10 @@ const ChatPage = () => {
         </div>
       </div>
 
-      <div className="flex-grow w-[90%] mx-auto flex flex-col h-[85vh]">
+      <div className="flex-grow w-[90%] md:w-[70%] mx-auto flex flex-col h-[85vh]">
 
-      <div className="flex-grow bg-[#ddd] overflow-y-scroll">
+{/* TODO: Add Chat BG */}
+      <div className="flex-grow bg-[#fff] rounded-lg overflow-y-scroll">
         {messages.map((msg, index) => (
           <div className="space-y-4" key={index}>
             <p>
