@@ -87,10 +87,44 @@ export default function Home() {
         </div>
       </div>
 
-      {/* TODO: Services */}
+      <div className="mx-auto w-[90%] lg:w-2/3 py-16">
+        <h3 className="text-center mb-4 text-4xl text-neutral-900 font-bold">
+          {
+            !isYoruba 
+            ? 'Who Can It Help?'
+            : 'Àwọn Èyàn Wo Nìkan yóò Rànlọ́wọ́?'
+          }
+        </h3>
 
+        <ul className="">
+          <li className="mb-3 list-item list-disc">
+              {isYoruba
+                  ? "Àwọn tó n dojú kọ àwọn ìṣòro ìbànújẹ́"
+                  : "Those facing depression "
+              }
+          </li>
 
-      
+          <li className="mb-3 list-item list-disc">
+          {isYoruba ? "Àwọn tó n dáníní àníyàn" : "Those facing anxiety"}
+          </li>
+
+          <li className="mb-3 list-item list-disc">
+          {isYoruba
+                  ? "Àwọn tó n dojúkọ ìṣòro ìdààmú ọkàn"
+                  : "Those dealing with mental health issues"}
+          </li>
+
+          <li className="mb-3 list-item list-disc">
+          {isYoruba
+                  ? "Àwọn tó fẹ́ ké bá a sọ̀rọ̀ nípa ìrírí ayé wọn"
+                  : "Those wanting to talk about their life experiences"}
+          </li>
+        </ul>
+        <div>
+
+        </div>
+      </div>
+
       <div className="mx-auto w-[90%] lg:w-2/3 text-center py-24 ">
         <h6 className="text-4xl text-center text-neutral-900 font-bold mb-3">
           {isYoruba ? "Ẹ́ Ṣàkọsílẹ̀ Lónìí!" : "Sign Up Today!"}
@@ -106,9 +140,9 @@ export default function Home() {
         <div className="w-[90%] mx-auto ">
           <h2 className="text-3xl font-montalt mb-4 font-bold">Ọ̀rẹ́ Ọkàn </h2>
           <p>
-            &copy; Copyright 2024. Byte7
+            &copy;Copyright 2024. Adeoti Inc.
           </p>
-          <p className="my-2">All rightt reserved.</p>
+          <p className="my-2">All right reserved.</p>
         </div>
       </footer>
       {/* <div className="flex flex-col-reverse lg:flex-row w-[90%] mx-auto lg:w-[70%] h-[80%]">
