@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Hero = ({ isYoruba } : { isYoruba: boolean }) => {
   return (
-    <div className='py-32'>
+    <div className='py-24'>
         <div className="mx-auto w-[90%] flex flex-col-reverse lg:flex-row space-y-7 lg:space-y-0 lg:space-x-7 ">
             <div className='flex-[1.5] '>
                 <h2 className='font-montalt text-5xl lg:text-8xl font-bold text-[#ff4f5a] mb-5 '>Ọ̀rẹ́ Ọkàn</h2>

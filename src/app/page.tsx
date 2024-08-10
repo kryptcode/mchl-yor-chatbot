@@ -50,7 +50,7 @@ export default function Home() {
       <Hero isYoruba={isYoruba} />
 
 
-      <div className="w-[90%] flex flex-col lg:flex-row gap-5 text-lg lg:text-3xl tracking-wide leading-relaxed justify-between mx-auto py-24 lg:pt-44 ">
+      <div className="w-[90%] flex flex-col lg:flex-row gap-5 text-lg lg:text-3xl tracking-wide leading-relaxed justify-between mx-auto py-10 lg:pt-44 ">
         {/* <h6 className="text-4xl text-center text-neutral-900 font-bold mb-3">
           {isYoruba ? "Kí ló jẹ́ Ọ̀rẹ́ Ọkàn?" : "What is Ọ̀rẹ́ Ọkàn?"}
           </h6> */}
@@ -87,40 +87,70 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto w-[90%] lg:w-2/3 py-16">
-        <h3 className="text-center mb-4 text-4xl text-neutral-900 font-bold">
-          {
-            !isYoruba 
-            ? 'Who Can It Help?'
-            : 'Àwọn Èyàn Wo Nìkan yóò Rànlọ́wọ́?'
-          }
-        </h3>
-
-        <ul className="">
-          <li className="mb-3 list-item list-disc">
-              {isYoruba
-                  ? "Àwọn tó n dojú kọ àwọn ìṣòro ìbànújẹ́"
-                  : "Those facing depression "
-              }
-          </li>
-
-          <li className="mb-3 list-item list-disc">
-          {isYoruba ? "Àwọn tó n dáníní àníyàn" : "Those facing anxiety"}
-          </li>
-
-          <li className="mb-3 list-item list-disc">
-          {isYoruba
-                  ? "Àwọn tó n dojúkọ ìṣòro ìdààmú ọkàn"
-                  : "Those dealing with mental health issues"}
-          </li>
-
-          <li className="mb-3 list-item list-disc">
-          {isYoruba
-                  ? "Àwọn tó fẹ́ ké bá a sọ̀rọ̀ nípa ìrírí ayé wọn"
-                  : "Those wanting to talk about their life experiences"}
-          </li>
-        </ul>
+      <div className="w-[90%] mx-auto py-24 ">
         <div>
+        <h5 className="text-center text-4xl font-bold text-neutral-900 mb-3">
+          {isYoruba ? "Àwọn Àǹfààní Ọ̀rẹ́ Ọkàn:" : "Benefits of Ọ̀rẹ́ Ọkàn:"}
+        </h5>
+
+        <div className="grid lg:grid-cols-3 gap-5 lg:gap-24 text-center">
+          <div className="p-3 py-6 border lg:h-44 flex justify-center items-center flex-col rounded-lg shadow-md hover:shadow-lg">
+            {isYoruba ? (
+                  <div>
+                    <h6 className="mb-2 text-lg font-semibold text-[#ff4f5a]">Àyíká Aláàyè</h6> 
+                    <p className="text-sm">
+                    Ìbáṣepọ̀ ní
+                    èdè Yorùbá yóò jẹ́ kí o rí ààyè láti sọ ohun tó wà nínú rẹ ní
+                    irọrun.
+                    </p>
+                  </div>
+              ) : (
+                  <div>
+                    <h6 className="mb-2 text-lg font-semibold text-[#ff4f5a] ">Comfortable Environment</h6>
+                    <p className="text-sm">
+                    Interaction in Yoruba will allow you to express your
+                    feelings more freely.
+                    </p>
+                  </div>
+            )}
+          </div>
+
+          <div className="p-3 py-6 border lg:h-44 flex justify-center items-center flex-col rounded-lg shadow-md hover:shadow-lg">
+            {isYoruba ? (
+                  <div>
+                    <h6 className="mb-2 text-lg font-semibold text-[#ff4f5a]">Ìbòwò àti Ìtẹ́wọ́gbà</h6> 
+                    <p className="text-sm">
+                    Ọ̀rẹ́ Ọkàn yóò jẹ́kí o lérò pẹ̀lú ìfẹ́ àti ìtẹ́wọ́gbà.
+                    </p>
+                  </div>
+              ) : (
+                  <div>
+                    <h6 className="mb-2 text-lg font-semibold text-[#ff4f5a] ">Respect and Acceptance</h6>
+                    <p className="text-sm">
+                    Ọ̀rẹ́ Ọkàn will make you feel loved and accepted.
+                    </p>
+                  </div>
+            )}
+          </div>
+
+          <div className="p-3 py-6 border lg:h-44 flex justify-center items-center flex-col rounded-lg shadow-md hover:shadow-lg">
+            {isYoruba ? (
+                  <div>
+                    <h6 className="mb-2 text-lg font-semibold text-[#ff4f5a]">Ìrọrun àti Ìdánáwo</h6> 
+                    <p className="text-sm">
+                    Sọ̀rọ̀ nígbàkùgbà, nígbà gbogbo, kó yé ó kó ni láti jáde lọ.
+                    </p>
+                  </div>
+              ) : (
+                  <div>
+                      <h6 className="mb-2 text-lg font-semibold text-[#ff4f5a] ">Convenience and Assistance</h6>
+                    <p className="text-sm">
+                    Talk anytime, anywhere, without needing to leave your home.
+                    </p>
+                  </div>
+            )}
+          </div>
+        </div>
 
         </div>
       </div>
